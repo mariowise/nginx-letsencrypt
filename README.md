@@ -12,7 +12,7 @@ docker run -d \
 -p 443:443 \
 -v $PWD/nginx.conf:/etc/nginx/nginx.conf \
 -v $PWD/conf.d:/etc/nginx/conf.d \
--v $PWD/live:/etc/letsencrypt/live/ \
+-v $PWD/letsencrypt:/etc/letsencrypt \
 --name nginx \
 --restart always \
 mariowise/nginx-letsencrypt:latest;
