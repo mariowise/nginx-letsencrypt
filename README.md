@@ -13,6 +13,7 @@ docker run -d \
 -v $PWD/nginx.conf:/etc/nginx/nginx.conf \
 -v $PWD/conf.d:/etc/nginx/conf.d \
 -v $PWD/letsencrypt:/etc/letsencrypt \
+-v $PWD/logs:/var/log/nginx \
 --name nginx \
 --restart always \
 mariowise/nginx-letsencrypt:latest;

@@ -7,3 +7,6 @@ WORKDIR /root
 
 RUN wget https://dl.eff.org/certbot-auto
 RUN chmod a+x certbot-auto
+
+RUN unlink /var/log/nginx/access.log && \
+    unlink /var/log/nginx/error.log
